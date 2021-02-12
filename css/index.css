@@ -18,7 +18,6 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
-	border: 0;
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
@@ -47,8 +46,12 @@ table {
 	border-spacing: 0;
 }
 
+
+/* General Page Styles */
+
 * {
     box-sizing: border-box;
+
 }
 
 html, body {
@@ -56,8 +59,16 @@ html, body {
     font-family: 'Roboto', sans-serif;
 }
 
+html {
+    font-size: 62.5%;
+}
+
+body {
+    margin: 5%;
+}
+
 h1, h2, h3, h4, h5 {
-    font-size: 18px;
+    font-size: 5rem;
     margin-bottom: 15px;
     font-family: 'Rubik', sans-serif;
 }
@@ -66,17 +77,73 @@ p {
     line-height: 1.4;
 }
 
+
+
+
+/* Header Styles */
+
+header {
+    display: flex;
+    width: 100%;
+    margin-bottom: 3%;
+}
+
+.logo {
+    width: 25%;
+}
+
+.logo img {
+    padding: 10%;
+    width: 100%;
+    
+}
+
+nav {
+    width: 75%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav a {
+    padding: 2% 4%;
+    font-size: 6rem;
+    text-decoration: none;
+    color: #000000;
+}
+
+nav a:hover {
+    color: #FFFFFF;
+    background: gray;
+    border-radius: 10%;
+    transition: 2s;
+}
+
+
+
+/* Body Styles */
+
+
 .container {
-    width: 800px;
+    width: 100%;
     margin: 0 auto;
+}
+
+.topPic {
+    width: 100%;
+    height: 20vh;
+    background-image: url(../img/jumbo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .top-content {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    margin-bottom: 20px;
+    margin: 1%;
     border-bottom: 1px dashed black;
+    font-size: 3rem;
 }
 
 .top-content .text-container {
@@ -86,7 +153,7 @@ p {
 }
 
 .middle-content {
-    margin-bottom: 20px;
+    margin: 1%;
     border-bottom: 1px dashed black;
 }
 
@@ -106,16 +173,56 @@ p {
     height: 100px;
     background: black;
     margin: 20px 2.5%;
+    padding: 5%;
+    font-size: 4rem;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
+.middle-content .boxes .boxOne {
+    background: teal;
+}
+
+.middle-content .boxes .boxTwo {
+    background: gold;
+}
+
+.middle-content .boxes .boxThree {
+    background: cadetblue;
+}
+
+.middle-content .boxes .boxFour {
+    background: coral;
+}
+
+.middle-content .boxes .boxFive {
+    background: crimson;
+}
+
+.middle-content .boxes .boxSix {
+    background: forestgreen;
+}
+.middle-content .boxes .boxSeven {
+    background: darkorchid;
+}
+.middle-content .boxes .boxEight {
+    background: hotpink;
+}
+.middle-content .boxes .boxNine {
+    background: indigo;
+}
+.middle-content .boxes .boxTen {
+    background: dodgerblue;
+}
+
 .bottom-content {
     display: flex;
-    margin: 0 2% 20px;
+    margin: 0 2% 1%;
     justify-content: space-around;
+    font-size: 4rem;
+
 }
 
 .bottom-content .text-container {
@@ -131,6 +238,9 @@ footer {
     background: black;
 }
 
+
+/* Footer Styles */
+
 footer nav {
     width: 60%;
     display: flex;
@@ -143,4 +253,54 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+
+
+/* About Page Styles */
+
+.containerAbout-page .firstPic {
+    height: 20vh;
+    background-image: url(../img/jumbo-about.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.about {
+    margin: 1% 8%;
+    padding-bottom: 1%;
+    font-size: 4rem;
+    border-bottom: 1px dashed black;
+}
+
+.middleAbout {
+    margin: 1% 4%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.middleAbout .child {
+    margin: 2% 5% 1%;
+    padding-bottom: 1%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    font-size: 4rem;
+    border-bottom: 1px dashed black;
+}
+
+.middleAbout img {
+    width: 100%;
+    margin-bottom: 1%;
+}
+
+button {
+    margin-top: 1%;
+    padding: 1% 4%;
+    border-radius: 10%;
+    font-size: 4rem;
+}
+.bottom {
+    margin: 2% 8%;
+    font-size: 4rem;
 }
