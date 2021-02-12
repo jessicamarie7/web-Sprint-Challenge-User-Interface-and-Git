@@ -18,7 +18,7 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
-	border: 0;
+	/* border: 0; */
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
@@ -47,8 +47,12 @@ table {
 	border-spacing: 0;
 }
 
+
+/* General Page Styles */
+
 * {
     box-sizing: border-box;
+    border: 1px solid gray;
 }
 
 html, body {
@@ -56,8 +60,16 @@ html, body {
     font-family: 'Roboto', sans-serif;
 }
 
+html {
+    font-size: 62.5%;
+}
+
+body {
+    margin: 5%;
+}
+
 h1, h2, h3, h4, h5 {
-    font-size: 18px;
+    font-size: 5rem;
     margin-bottom: 15px;
     font-family: 'Rubik', sans-serif;
 }
@@ -66,17 +78,66 @@ p {
     line-height: 1.4;
 }
 
+
+
+
+/* Header Styles */
+
+header {
+    display: flex;
+    width: 100%;
+    margin-bottom: 3%;
+}
+
+.logo {
+    width: 25%;
+}
+
+.logo img {
+    padding: 10%;
+    width: 100%;
+    
+}
+
+nav {
+    width: 75%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav a {
+    padding: 2% 4%;
+    font-size: 6rem;
+    text-decoration: none;
+    color: #000000;
+}
+
+
+
+/* Body Styles */
+
+
 .container {
-    width: 800px;
+    width: 100%;
     margin: 0 auto;
+}
+
+.topPic {
+    width: 100%;
+    height: 20vh;
+    background-image: url(../img/jumbo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .top-content {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    margin-bottom: 20px;
+    margin: 1%;
     border-bottom: 1px dashed black;
+    font-size: 3rem;
 }
 
 .top-content .text-container {
@@ -86,7 +147,7 @@ p {
 }
 
 .middle-content {
-    margin-bottom: 20px;
+    margin: 1%;
     border-bottom: 1px dashed black;
 }
 
@@ -144,3 +205,4 @@ footer nav a {
     color: white;
     text-decoration: none;
 }
+
