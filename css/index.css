@@ -18,7 +18,6 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
-	/* border: 0; */
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
@@ -52,7 +51,7 @@ table {
 
 * {
     box-sizing: border-box;
-    /* border: 1px solid gray; */
+    border: 1px solid gray;
 }
 
 html, body {
@@ -239,6 +238,9 @@ footer {
     background: black;
 }
 
+
+/* Footer Styles */
+
 footer nav {
     width: 60%;
     display: flex;
@@ -253,3 +255,33 @@ footer nav a {
     text-decoration: none;
 }
 
+
+
+/* About Page Styles */
+
+.containerAbout-page .firstPic {
+    height: 20vh;
+    background-image: url(../img/jumbo-about.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.about {
+    margin: 1% 4%;
+    font-size: 4rem;
+}
+
+.middleAbout {
+    margin: 1% 4%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.middleAbout .child {
+    margin-top: 3%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center;
+    align-items: center; */
+}
