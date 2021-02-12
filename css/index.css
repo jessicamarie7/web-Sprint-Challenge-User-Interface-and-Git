@@ -51,7 +51,7 @@ table {
 
 * {
     box-sizing: border-box;
-    border: 1px solid gray;
+
 }
 
 html, body {
@@ -267,8 +267,10 @@ footer nav a {
 }
 
 .about {
-    margin: 1% 4%;
+    margin: 1% 8%;
+    padding-bottom: 1%;
     font-size: 4rem;
+    border-bottom: 1px dashed black;
 }
 
 .middleAbout {
@@ -278,10 +280,27 @@ footer nav a {
 }
 
 .middleAbout .child {
-    margin-top: 3%;
-    width: 50%;
+    margin: 2% 5% 1%;
+    padding-bottom: 1%;
+    width: 40%;
     display: flex;
     flex-direction: column;
-    /* justify-content: center;
-    align-items: center; */
+    font-size: 4rem;
+    border-bottom: 1px dashed black;
+}
+
+.middleAbout img {
+    width: 100%;
+    margin-bottom: 1%;
+}
+
+button {
+    margin-top: 1%;
+    padding: 1% 4%;
+    border-radius: 10%;
+    font-size: 4rem;
+}
+.bottom {
+    margin: 2% 8%;
+    font-size: 4rem;
 }
