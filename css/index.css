@@ -52,7 +52,7 @@ table {
 
 * {
     box-sizing: border-box;
-    border: 1px solid gray;
+    /* border: 1px solid gray; */
 }
 
 html, body {
@@ -113,6 +113,13 @@ nav a {
     color: #000000;
 }
 
+nav a:hover {
+    color: #FFFFFF;
+    background: gray;
+    border-radius: 10%;
+    transition: 2s;
+}
+
 
 
 /* Body Styles */
@@ -167,16 +174,56 @@ nav a {
     height: 100px;
     background: black;
     margin: 20px 2.5%;
+    padding: 5%;
+    font-size: 4rem;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
+.middle-content .boxes .boxOne {
+    background: teal;
+}
+
+.middle-content .boxes .boxTwo {
+    background: gold;
+}
+
+.middle-content .boxes .boxThree {
+    background: cadetblue;
+}
+
+.middle-content .boxes .boxFour {
+    background: coral;
+}
+
+.middle-content .boxes .boxFive {
+    background: crimson;
+}
+
+.middle-content .boxes .boxSix {
+    background: forestgreen;
+}
+.middle-content .boxes .boxSeven {
+    background: darkorchid;
+}
+.middle-content .boxes .boxEight {
+    background: hotpink;
+}
+.middle-content .boxes .boxNine {
+    background: indigo;
+}
+.middle-content .boxes .boxTen {
+    background: dodgerblue;
+}
+
 .bottom-content {
     display: flex;
-    margin: 0 2% 20px;
+    margin: 0 2% 1%;
     justify-content: space-around;
+    font-size: 4rem;
+
 }
 
 .bottom-content .text-container {
